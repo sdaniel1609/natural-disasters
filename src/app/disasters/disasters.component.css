@@ -1,0 +1,24 @@
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+  margin-left: 4px;
+}
+mat-list-item {
+  background-color: rgba(203, 207, 204, 0.84);
+  margin: 5px;
+  border-radius: 5px;
+}
+mat-list-item:hover{
+  margin-left: 10px;
+  cursor: pointer;
+}
+.disasters {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+
+.disasterId {
+  padding: 5px;
+}

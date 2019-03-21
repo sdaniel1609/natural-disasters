@@ -1,0 +1,19 @@
+<div class="container">
+<h2>List Of Natural Disasters</h2>
+<mat-list class="disasters">
+  <mat-list-item class="disasters-list" *ngFor="let disaster of disasters">
+    <a routerLink="/detail/{{disaster.id}}">
+      <span class="disasterId">{{disaster.id}} </span>
+      {{disaster.name}}
+    </a>
+    <a class="delete" title="delete disaster"
+            (click)="delete(disaster)"><i class="fas fa-trash-alt"></i></a>
+  </mat-list-item>
+</mat-list>
+<div>
+  <label>Disaster Name:
+    <input #disasterName>
+  </label>
+  <button (click)="add(disasterName.value); disasterName.value=''">add</button>
+</div>
+</div>
